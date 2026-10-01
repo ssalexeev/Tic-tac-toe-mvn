@@ -1,6 +1,6 @@
 package org.example.tictactoe.service;
 
-import tictactoe.TicTacToe;
+import org.example.tictactoe.TicTacToe;
 
 import java.util.List;
 import java.util.concurrent.ThreadLocalRandom;

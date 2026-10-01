@@ -1,11 +1,11 @@
 package org.example.tictactoe;
 
-import tictactoe.enums.GameState;
-import tictactoe.enums.GameStatus;
-import tictactoe.enums.PlayerType;
-import tictactoe.service.EasyLevelAgent;
-import tictactoe.service.HardLevelAgent;
-import tictactoe.service.MediumLevelAgent;
+import org.example.tictactoe.enums.GameState;
+import org.example.tictactoe.enums.GameStatus;
+import org.example.tictactoe.enums.PlayerType;
+import org.example.tictactoe.service.EasyLevelAgent;
+import org.example.tictactoe.service.HardLevelAgent;
+import org.example.tictactoe.service.MediumLevelAgent;
 
 import java.util.ArrayList;
 import java.util.InputMismatchException;
@@ -26,9 +26,9 @@ public class TicTacToe {
 
     private Scanner scanner;
 
-    private  HardLevelAgent hardLevelAgent;
-    private  MediumLevelAgent mediumLevelAgent;
-    private  EasyLevelAgent easyLevelAgent;
+    private HardLevelAgent hardLevelAgent;
+    private MediumLevelAgent mediumLevelAgent;
+    private EasyLevelAgent easyLevelAgent;
 
 
     public void initEmptyCells() {
@@ -40,7 +40,6 @@ public class TicTacToe {
             }
         }
     }
-
 
 
     public void startGame() {
@@ -67,12 +66,12 @@ public class TicTacToe {
         scanner.close();
     }
 
-    private void initContext(){
+    private void initContext() {
         board = new String[3][3];
         initEmptyCells();
-        this.hardLevelAgent = new HardLevelAgent(board,emptyCells);
-        this.mediumLevelAgent = new MediumLevelAgent(board,emptyCells);
-        this.easyLevelAgent = new EasyLevelAgent(board,emptyCells);
+        this.hardLevelAgent = new HardLevelAgent(board, emptyCells);
+        this.mediumLevelAgent = new MediumLevelAgent(board, emptyCells);
+        this.easyLevelAgent = new EasyLevelAgent(board, emptyCells);
 
         gameStatus = GameStatus.NOT_FINISHED;
         printBoard();

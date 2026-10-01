@@ -1,10 +1,12 @@
 package org.example.tictactoe.service;
 
-import tictactoe.TicTacToe;
+
+import org.example.tictactoe.TicTacToe;
 
 import java.util.List;
 
-import static tictactoe.TicTacToe.getTriplets;
+import static org.example.tictactoe.TicTacToe.getTriplets;
+
 
 public class HardLevelAgent extends Agent{
 
