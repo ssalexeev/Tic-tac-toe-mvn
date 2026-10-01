@@ -1,4 +1,4 @@
-package org.example.excepion;
+package org.example.tictactoe.excepion;
 
 public class InitialStateLengthException extends RuntimeException{
     public InitialStateLengthException(String message) {

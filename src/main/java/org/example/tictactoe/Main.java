@@ -1,6 +1,4 @@
-package org.example;
-
-import org.example.tictactoe.TicTacToe;
+package org.example.tictactoe;
 
 public class Main {
     public static void main(String[] args) {

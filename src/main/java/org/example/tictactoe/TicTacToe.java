@@ -1,4 +1,4 @@
-package org.example;
+package org.example.tictactoe;
 
 import tictactoe.enums.GameState;
 import tictactoe.enums.GameStatus;
