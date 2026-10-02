@@ -1,6 +1,6 @@
-package org.example.tictactoe.service;
+package org.example.tictactoe.agent;
 
-import org.example.tictactoe.TicTacToe;
+import org.example.tictactoe.domain.Player;
 
 import java.util.List;
 
@@ -11,7 +11,7 @@ public class MediumLevelAgent extends Agent{
     }
 
 
-    public void setCoordinates(TicTacToe.Player player) {
+    public void setCoordinates(Player player) {
         String opponentSymbol = player.getSymbol().equals("X") ? "O" : "X";
 
         // 1. Check for a Winning Move

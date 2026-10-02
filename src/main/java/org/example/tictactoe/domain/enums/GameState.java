@@ -1,4 +1,4 @@
-package org.example.tictactoe.enums;
+package org.example.tictactoe.domain.enums;
 
 public enum GameState {
     START("start"),
