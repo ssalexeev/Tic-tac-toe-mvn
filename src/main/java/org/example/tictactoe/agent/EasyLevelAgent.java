@@ -1,5 +1,6 @@
 package org.example.tictactoe.service;
 
+import org.example.tictactoe.domain.Player;
 import org.example.tictactoe.domain.TicTacToe;
 
 import java.util.List;
@@ -9,7 +10,7 @@ public class EasyLevelAgent extends Agent{
         super(board, emptyCells);
     }
 
-    public void setCoordinates(TicTacToe.Player player){
+    public void setCoordinates(Player player){
         super.setRandomCoordinates(player);
     }
 

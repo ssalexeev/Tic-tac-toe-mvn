@@ -1,5 +1,6 @@
 package org.example.tictactoe.service;
 
+import org.example.tictactoe.domain.Player;
 import org.example.tictactoe.domain.TicTacToe;
 
 import java.util.List;
@@ -15,7 +16,7 @@ public abstract class Agent {
         this.emptyCells = emptyCells;
     }
 
-    protected void makeComputerMove(TicTacToe.Player player, int x, int y) {
+    protected void makeComputerMove(Player player, int x, int y) {
         this.board[x][y] = player.getSymbol();
 
         String key = (x + 1) + "" + (y + 1);
@@ -25,9 +26,9 @@ public abstract class Agent {
         printBoard();
     }
 
-    public abstract void setCoordinates(TicTacToe.Player player);
+    public abstract void setCoordinates(Player player);
 
-    protected void setRandomCoordinates(TicTacToe.Player player) {
+    protected void setRandomCoordinates(Player player) {
         int lastIdx = emptyCells.size() - 1;
         int randIdx = ThreadLocalRandom.current().nextInt(emptyCells.size());
 

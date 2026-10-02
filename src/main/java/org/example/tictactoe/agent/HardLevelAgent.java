@@ -1,12 +1,8 @@
 package org.example.tictactoe.service;
 
-
-import org.example.tictactoe.domain.TicTacToe;
-
+import org.example.tictactoe.domain.Board;
+import org.example.tictactoe.domain.Player;
 import java.util.List;
-
-import static org.example.tictactoe.domain.TicTacToe.getTriplets;
-
 
 public class HardLevelAgent extends Agent{
 
@@ -14,7 +10,7 @@ public class HardLevelAgent extends Agent{
         super(board, emptyCells);
     }
 
-    public void setCoordinates(TicTacToe.Player player) {
+    public void setCoordinates(Player player) {
         String aiSymbol = player.getSymbol();
         String opponentSymbol = aiSymbol.equals("X") ? "O" : "X";
 
@@ -89,7 +85,7 @@ public class HardLevelAgent extends Agent{
 
     // Helper method to evaluate wins without mutating game status
     private String checkWinnerForMinimax() {
-        String[][] triplets = getTriplets(board);
+        String[][] triplets = Board.getTriplets(board);
         for (String[] line : triplets) {
             if (line[0] != null && line[0].equals(line[1]) && line[1].equals(line[2])) {
                 return line[0];
