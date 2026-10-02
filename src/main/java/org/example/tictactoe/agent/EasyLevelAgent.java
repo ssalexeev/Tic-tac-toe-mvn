@@ -1,7 +1,6 @@
-package org.example.tictactoe.service;
+package org.example.tictactoe.agent;
 
 import org.example.tictactoe.domain.Player;
-import org.example.tictactoe.domain.TicTacToe;
 
 import java.util.List;
 

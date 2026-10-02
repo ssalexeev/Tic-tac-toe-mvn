@@ -1,6 +1,6 @@
 package org.example.tictactoe.domain;
 
-import org.example.tictactoe.enums.GameStatus;
+import org.example.tictactoe.domain.enums.GameStatus;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -42,7 +42,7 @@ public class Board {
     }
 
     public GameStatus checkStatus() {
-        String[][] triplets = getTriplets();
+        String[][] triplets = getTriplets(grid);
 
         for (String[] line : triplets) {
             if (line[0] != null && line[0].equals(line[1]) && line[1].equals(line[2])) {
@@ -58,7 +58,7 @@ public class Board {
     }
 
     public String getWinnerSymbol() {
-        String[][] triplets = getTriplets();
+        String[][] triplets = getTriplets(grid);
         for (String[] line : triplets) {
             if (line[0] != null && line[0].equals(line[1]) && line[1].equals(line[2])) {
                 return line[0];
@@ -67,7 +67,7 @@ public class Board {
         return null;
     }
 
-    public String[][] getTriplets() {
+    public static String[][] getTriplets(String[][] grid) {
         String[][] triplets = new String[8][3];
 
         for (int i = 0; i < 3; i++) {

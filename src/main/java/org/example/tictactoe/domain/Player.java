@@ -1,7 +1,7 @@
 package org.example.tictactoe.domain;
 
 
-import org.example.tictactoe.enums.PlayerType;
+import org.example.tictactoe.domain.enums.PlayerType;
 
 public class Player {
     private final PlayerType type;

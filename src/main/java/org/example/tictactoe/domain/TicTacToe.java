@@ -1,11 +1,11 @@
 package org.example.tictactoe.domain;
 
-import org.example.tictactoe.enums.GameState;
-import org.example.tictactoe.enums.GameStatus;
-import org.example.tictactoe.enums.PlayerType;
-import org.example.tictactoe.service.EasyLevelAgent;
-import org.example.tictactoe.service.HardLevelAgent;
-import org.example.tictactoe.service.MediumLevelAgent;
+import org.example.tictactoe.domain.enums.GameState;
+import org.example.tictactoe.domain.enums.GameStatus;
+import org.example.tictactoe.domain.enums.PlayerType;
+import org.example.tictactoe.agent.EasyLevelAgent;
+import org.example.tictactoe.agent.HardLevelAgent;
+import org.example.tictactoe.agent.MediumLevelAgent;
 
 import java.io.InputStream;
 import java.io.PrintStream;
